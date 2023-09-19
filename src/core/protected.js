@@ -25,6 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
       checkAuth();
     });
   
+    document.getElementById("logoutButton").addEventListener("click", function() {
+      localStorage.removeItem("userToken");
+      checkAuth();
+    });
   });
   
   
